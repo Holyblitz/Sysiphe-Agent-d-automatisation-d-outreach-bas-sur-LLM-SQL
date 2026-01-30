@@ -45,6 +45,26 @@ Sysiphe automates the outbound workflow in four controlled steps:
 
 - Python 3
 - PostgreSQL
+
+---
+
+## Repository Structure
+
+sysiphe/
+├── prospect/
+│   ├── run_sysiphe_draft_v1.py
+│   ├── sysiphe_enrich_contacts_v1.py
+│   ├── send_sysiphe_gmail_v1.py
+│   └── send_sysiphe_brevo_v1.py
+│
+├── db/
+│   └── schema.sql
+│
+├── config/
+│   └── .env.example
+│
+├── requirements.txt
+└── README.md
 - LLMs (local or API-based)
 - SMTP (Gmail / Brevo)
 - SQL-first orchestration
